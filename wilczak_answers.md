@@ -4,7 +4,7 @@ ADD ACC 0x0
 when all bits are 0.
 
 2.
-There are 8*4*4 = 256 possible math opcodes implemented, 2*2*3 = 12 possible memory opcodes implemented, and 7 possible branch opcodes implemented, and 2 special opcodes. In total, there are 149 implemented OPCODEs, leaving room for 107 more possible opcodes.
+There are 256 possible math opcodes implemented, 2*2*3 = 12 possible memory opcodes implemented, and 7 possible branch opcodes implemented, and 2 special opcodes. In total, there are 149 implemented OPCODEs, leaving room for 107 more possible opcodes.
 
 3.
 To compare ACC with a constant, a subtract opcode for the ACC and constant needs to be put into memory, followed by the constant, followed by a branch opcode (say, BRZ). This is "0xc6 (constant) 0x11".
