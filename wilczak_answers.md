@@ -1,4 +1,5 @@
-```1.
+```
+1.
 It will do
 ADD ACC 0x0
 when all bits are 0.
