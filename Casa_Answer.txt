@@ -1,0 +1,24 @@
+Ryan C. Casa, CEC 470, 11/11/2021
+
+Please note that a lot of the code was constructed together at multiple team meetings with Daniel managing the Github.
+
+Questions: 
+As part of your project, answer the following questions. You may discuss the concepts with 
+others in the class, but each of you must submit your answers in your own words. 
+
+1. What opcode will blank memory initialized to 0x00 look like to the processor? 
+0x00 will be STOR ACC, Address, 0x00 is all 0s so it will store cleared memory STOR ACC, [0x0000]
+
+2. Of the 256 possible opcodes we can get from and 8-bit opcode, how many are not being used 
+in our instruction set, i.e., how many instructions could we add for future expansions of our 
+processor? 
+This one gave me a lot of trouble, but our simulator had about 153 different opcode possibilities when I ran through it. So we could have expanded for 103 more opcodes.
+
+3. What would we need to add to our simulator to be able to include the following instructions: 
+compare ACC with a constant, PUSH to or PULL from the stack, and take the 2's complement of  
+ACC? 
+We need a register that can hold an operation that can compare ACC with a constant. We need another register to PUSH or PULL from the stack that can be a poinert to the memory. We also need a system to perform the operation to take the 2’s complement of ACC like an instruction. 
+
+4. If executeInstruction() were divided into two parts, decode and execute, what additional 
+global resources would be needed for your simulator?
+	If this method was divided, we would need global infomation in order to pass the decoded information into the execute method.
