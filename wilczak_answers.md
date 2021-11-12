@@ -13,4 +13,5 @@ To PUSH or PULL from a stack, the memory opcodes are needed. Pushing a value wou
 
 To take the 2's complement of ACC, it needs to be XOR'd with all 1's and then incremented. This is "0xa6 0xff 0xd4".
 
-4. You will need additional registers to store intermediate information related to what was decoded for the execute function.
+4.
+You will need additional registers to store intermediate information related to what was decoded for the execute function.
